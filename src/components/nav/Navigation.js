@@ -9,7 +9,6 @@ class Navigation extends Component {
       user: {_id: 'all'}
     };
   }
-  // TODO - actually implement this for realz
   render() {
     return (
       <Navbar>
