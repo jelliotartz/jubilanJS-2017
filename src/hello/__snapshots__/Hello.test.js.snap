@@ -1,0 +1,14 @@
+exports[`Hello World: should render to match the snapshot 1`] = `
+<div
+  className="hello">
+  <h1>
+    Hiya
+  </h1>
+  <h2>
+    Fritz
+  </h2>
+  <p>
+    Congratulations! You created a React Component!
+  </p>
+</div>
+`;
