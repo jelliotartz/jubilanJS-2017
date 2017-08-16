@@ -9,7 +9,7 @@ class EmployeeTable extends Component {
 
     let employeeRows = this.props.employees.map(function (employee) {
       return (
-        <EmployeeRow employee={employee} key={employee.id} />
+        <EmployeeRow employee={employee} key={employee._id} />
       );
     });
 
