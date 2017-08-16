@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import EmployeeTable from './EmployeeTable';
 import {PageHeader, Grid, Row, Button} from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap';
 import { bindActionCreators } from 'redux';
+import {LinkContainer} from 'react-router-bootstrap';
 import { connect } from 'react-redux';
 import * as EmployeeActions from '../../actions/EmployeeActionCreator';
 
@@ -10,8 +10,6 @@ class Employees extends Component {
 
   constructor(props) {
     super(props);
-
-    //Replaces the previously hard-coded state assignment
     props.actions.listEmployees();
   }
 
@@ -22,9 +20,11 @@ class Employees extends Component {
           <PageHeader>Employees</PageHeader>
         </Row>
         <Row>
-
-          {/* TODO - Add a button to open the create employee route */}
-
+          <div className="pull-right">
+            <LinkContainer to="/employees/create">
+              <Button bsStyle="primary">Create Employee</Button>
+            </LinkContainer>
+          </div>
         </Row>
         <Row>
           <EmployeeTable employees={this.props.employees} actions={this.props.actions}/>
