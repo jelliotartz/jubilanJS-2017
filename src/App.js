@@ -42,10 +42,6 @@ class App extends Component {
               <Route path='/employees/:user_id/timesheets/detail/:timesheet_id/timeunits/create' component={TimeunitsCreate} />
               <Route path='/employees/:user_id/timesheets/detail/:timesheet_id/timeunits/detail/:_id' component={TimeunitsDetail} />
 
-
-
-
-
               <Redirect to="/employees"/>
             </Switch>
 
